@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/v4-shims.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+        <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                
+                <span><img src="./12344.png" alt="logo" height="120" ></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="nav-link">Home</a></li>
+                <li><a href="./product.html" class="nav-link">Products</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#inquiry" class="nav-link">Inquiry</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+<!-- Inquiry Section -->
+    <section id="inquiry" class="inquiry">
+        <div class="container">
+            <h2>Product Inquiry</h2>
+            <div class="inquiry-form">
+                <form id="inquiryForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="inquiryName" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="inquiryEmail" name="email" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="inquiryPhone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="inquiryLocation" name="location" placeholder="Location" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select id="inquiryProduct" name="product" required>
+                            <option value="">Select Product</option>
+                            <option value="dhanshakti">Dhanshakti</option>
+                            <option value="genius-gold">Genius Gold</option>
+                            <option value="agrisafe100">Agrisafe100</option>
+                            <option value="green-max-9">Green Max 9</option>
+                            <option value="genius-combi">Genius Combi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="inquiryQuantity" name="quantity" placeholder="Quantity Required" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="inquiryMessage" name="message" placeholder="Additional Requirements or Questions" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span><img src="./12344.png" alt="logo" height="120" ></span>
+                        <span>Genius Agrichem Pvt Ltd</span>
+                    </div>
+                    <p>Leads for better harvesting</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./product.html">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="./index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li>Dhanshakti</li>
+                        <li>Genius Gold</li>
+                        <li>Agrisafe100</li>
+                        <li>Green Max 9</li>
+                        <li>Genius Combi</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Chh. Sambhajinagar</p>
+                        <p><i class="fas fa-phone"></i> 7057008514</p>
+                        <p><i class="fas fa-envelope"></i> info@geniusagrichem.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Genius Agrichem Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <i class="fas fa-check-circle"></i>
+                <h3>Success!</h3>
+                <p id="modalMessage">Your message has been sent successfully. We will contact you soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
